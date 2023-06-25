@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <div class="container">
+        <header><i class='bx bx-left-arrow-alt'></i> Weather App</header>
+
+        <!-- Phần nhập thành phố -->
+        <section class="input-part">
+            <!-- Hiện đỏ khi nhập k đúng city, xanh khi đúng -->
+            <p class="input-part__state"></p>
+            <input class="input-part__input" type="text" placeholder="Enter city name" spellcheck="false">
+
+            <div class="input-part__separate"></div>
+            <button class="input-part__btn">Get Your Current Location</button>
+        </section>
+
+        <!-- Phần thời tiết -->
+        <section class="weather-part">
+            <img class="weather-part__img" src="#" alt="">
+
+            <div class="weather-part__stats">
+                <span class="weather-part__num">_</span>
+                <span class="weather-part__deg"><sup>o</sup>C</span>
+            </div>
+
+            <h4 class="weather-part__state">_</h4>
+
+            <div class="weather-part__location">
+                <i class='bx bx-map'></i>
+                <span> _ _</span>
+            </div>
+
+            <div class="weather-part__infor">
+                <div class="weather-part__data">
+                    <i class='weather-part__icon bx bxs-thermometer'></i>
+
+                    <div>
+                        <div style="font-weight: 600;">
+                            <span class="weather-part__feel">_</span>
+                            <sup>o</sup> C
+                        </div>
+                        <p class="weather-part__desc">Feels like</p>
+                    </div>
+                </div>
+
+                <div class="weather-part__data">
+                    <i class='weather-part__icon bx bxs-droplet-half'></i>
+
+                    <div>
+                        <p class="weather-part__humidity">_</p>
+                        <p class="weather-part__desc">Humidity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
